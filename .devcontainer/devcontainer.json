@@ -1,0 +1,26 @@
+{
+    "dockerComposeFile": [
+      "../compose.yaml"
+    ],
+    "service": "app",
+    "updateRemoteUserUID": false,
+    "remoteUser": "www-data",
+    "workspaceFolder": "/var/www/html",
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "blade.format.enable": true,
+          "editor.formatOnSave": true,
+          "editor.renderWhitespace": "boundary",
+          "php.suggest.basic": false,
+          "php.validate.enable": false
+      },
+        "extensions": [
+            "bmewburn.vscode-intelephense-client",
+            "onecentlin.laravel-extension-pack",
+            "shufo.vscode-blade-formatter",
+            "xdebug.php-debug"
+        ]
+      }
+    }
+  }
