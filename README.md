@@ -30,6 +30,12 @@ docker compose up -d
 docker compose down
 ```
 
+## Remove
+
+```
+docker compose down --rmi all --volumes
+```
+
 ## Infomation
 
 see) [.env](.env)
