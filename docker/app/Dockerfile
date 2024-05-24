@@ -60,5 +60,6 @@ RUN mkdir -p /home/www-data \
     && rm -rf /var/www/ \
     && mkdir -p /var/www
 
-RUN mkdir -p /var/www/html/public \
-    && chown -R www-data:www-data /var/www/html
+RUN mkdir -p /var/www/html/public
+RUN echo 'Hello, world!' > /var/www/html/public/index.html
+RUN chown -R www-data:www-data /var/www/html
