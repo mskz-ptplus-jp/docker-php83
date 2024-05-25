@@ -44,6 +44,15 @@ see) [.env](.env)
 |-            |-                        |-     |
 | site        | http://localhost:30080  ||
 | site(https) | http://localhost:34040  |Get started, Access URL in browser.<br>Make a request of HTTPS tunnel. |
+| SchemaSpy   | http://localhost:30080/schema/  | see) [SchemaSpy](#SchemaSpy) |
 | mailpit     | http://localhost:30025  ||
 | pgAdmin4    | http://localhost:38888  | pgadmin4@example.jp / 123 |
 | xdebug      |                         | port 39080 |
+
+## SchemaSpy
+
+Run commands in terminal of app container
+
+```
+java -jar /opt/schemaspy.jar -configFile /var/www/schema/schemaspy.properties
+```

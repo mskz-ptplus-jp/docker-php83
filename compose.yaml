@@ -10,6 +10,7 @@ services:
       - ./docker/app/conf/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
       - ./docker/app/conf/000-default:/etc/apache2/sites-available/000-default
       - ./docker/app/conf/000-default.conf:/etc/apache2/sites-available/000-default.conf
+      - ./docker/app/conf/schemaspy.properties:/var/www/schema/schemaspy.properties
     working_dir: /var/www/html
   cron:
     build:
