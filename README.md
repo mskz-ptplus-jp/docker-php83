@@ -1,4 +1,11 @@
-# Docker for PHP 8.3
+# Docker Compose for PHP 8.3
+
+## Requiment
+
+- [PHP 8.3](https://www.php.net/releases/8.3/)
+- [Apache 2.4](https://httpd.apache.org/)
+- [PostgreSQL](https://www.postgresql.org/) latest
+- [Mailpit](https://mailpit.axllent.org/) latest
 
 ## Provisioning
 
