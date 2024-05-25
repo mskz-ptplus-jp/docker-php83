@@ -10,17 +10,19 @@ RUN apt update \
     && apt-get -y upgrade
 
 RUN apt-get install -y \
-    locales \
     bash-completion \
     curl \
     git \
-    golang \
+    graphviz \
     libpq-dev \
-    libssl-dev \
     libzip-dev \
+    locales \
+    openjdk-17-jre-headless \
     postgresql \
     sudo \
+    unzip \
     vim \
+    wget \
     xsel \
     zip
 
@@ -63,3 +65,8 @@ RUN mkdir -p /home/www-data \
 RUN mkdir -p /var/www/html/public
 RUN echo 'Hello, world!' > /var/www/html/public/index.html
 RUN chown -R www-data:www-data /var/www/html
+
+RUN wget https://github.com/schemaspy/schemaspy/releases/download/v6.1.0/schemaspy-6.1.0.jar -O /opt/schemaspy.jar
+RUN wget https://jdbc.postgresql.org/download/postgresql-42.2.23.jar -O /opt/postgresql-42.2.23.jar
+RUN mkdir -p /var/www/schema
+RUN chown www-data:www-data -R /var/www/schema
