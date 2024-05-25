@@ -5,6 +5,7 @@
 - [PHP 8.3](https://www.php.net/releases/8.3/)
 - [Apache 2.4](https://httpd.apache.org/)
 - [PostgreSQL](https://www.postgresql.org/) latest
+  - [pgAdmin4](https://www.pgadmin.org/) latest
 - [Mailpit](https://mailpit.axllent.org/) latest
 
 ## Provisioning
