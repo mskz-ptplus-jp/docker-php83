@@ -19,6 +19,7 @@
             "bmewburn.vscode-intelephense-client",
             "onecentlin.laravel-extension-pack",
             "shufo.vscode-blade-formatter",
+            "ms-playwright.playwright",
             "xdebug.php-debug"
         ]
       }
