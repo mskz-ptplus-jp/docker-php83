@@ -51,18 +51,6 @@ services:
       - pgadmin4:/var/lib/pgadmin
     depends_on:
       - database
-  ngrok:
-    image: ngrok/ngrok:latest
-    restart: unless-stopped
-    command:
-      - "start"
-      - "--all"
-      - "--config"
-      - "/etc/ngrok.yml"
-    ports:
-      - ${FORWARD_NGROK_PORT:-4040}:4040
-    volumes:
-      - ./ngrok.yaml:/etc/ngrok.yml
 volumes:
   app:
   database:
