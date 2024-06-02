@@ -1,6 +1,6 @@
 # Docker Compose for PHP 8.3
 
-## Requiment
+## System Requirements
 
 - [PHP 8.3](https://www.php.net/releases/8.3/)
 - [Apache 2.4](https://httpd.apache.org/)
